@@ -1,0 +1,16 @@
+<div style="padding: 13px;">
+    <mat-spinner *ngIf="users.length === 0"></mat-spinner>
+
+    <mat-card *ngFor="let user of users" style="margin-top:10px;">
+        <mat-card-header>
+            <mat-card-title>{{user.username}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                {{user.username}}
+            </p>
+           
+        </mat-card-content>
+        
+    </mat-card>
+</div>
